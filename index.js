@@ -34,6 +34,10 @@ let c = { nom: "MEYER", prenom: "Mathieu", age: 33 } ;
 
 affichePersonne( c ) ;
 
+let d={ nom:"YASAR",prenom:"Merve"};
+affichePersonne(d);
+
+
 
 
 
