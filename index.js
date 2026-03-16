@@ -28,6 +28,12 @@ b.age = 21 ;
 
 affichePersonne( b ) ;
 
+// Creation d'un objet en JSON
+
+let c = { nom: "MEYER", prenom: "Mathieu", age: 33 } ;
+
+affichePersonne( c ) ;
+
 
 
 
