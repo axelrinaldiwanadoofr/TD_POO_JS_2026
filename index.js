@@ -18,4 +18,16 @@ function affichePersonne(p){
 // appel de la fonction à partir de l'objet a
 affichePersonne(a);
 
+// Creation d'un objet vide avec une manière 
+
+let b = {} ;
+
+b.nom = "DURANT" ;
+b.prenom = "Pierre" ;
+b.age = 21 ;
+
+affichePersonne( b ) ;
+
+
+
 
