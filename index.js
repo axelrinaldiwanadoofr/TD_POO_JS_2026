@@ -37,6 +37,19 @@ affichePersonne( c ) ;
 let d={ nom:"YASAR",prenom:"Merve"};
 affichePersonne(d);
 
+// Ajout de la méthode affiche pour l'objet a
+
+a.affiche = function() 
+{
+    console.log( "nom: " + this.nom +
+         " \nprenom: " + this.prenom +
+          " \nage: " + this.age) ;
+}
+
+// Appel de la méthode affiche 
+console.log( "\n\nAppel de la méthode affiche à partir de l'objet a") ;
+a.affiche() ;
+
 
 
 
