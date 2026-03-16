@@ -50,6 +50,12 @@ a.affiche = function()
 console.log( "\n\nAppel de la méthode affiche à partir de l'objet a") ;
 a.affiche() ;
 
+// On cree l'atribut affiche pour b qui référence la même fonction que 
+// a.affiche
+b.affiche = a.affiche ;
+
+console.log( "\n\nAppel de la méthode affiche à partir de l'objet a") ;
+b.affiche() ;
 
 
 
