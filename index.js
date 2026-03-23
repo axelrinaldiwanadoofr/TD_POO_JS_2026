@@ -57,6 +57,6 @@ b.affiche = a.affiche ;
 console.log( "\n\nAppel de la méthode affiche à partir de l'objet a") ;
 b.affiche() ;
 
-
+c.affiche() ;
 
 
