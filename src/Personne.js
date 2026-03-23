@@ -8,9 +8,9 @@ export class Personne // Le mot export précise que la classe Personne est expor
 
         if (age< 0) {
             console.log("l'âge doit être positif");
-            this.age = 0;
+            this._age = 0;
         }else{
-            this.age = age ;
+            this._age = age ;
         }
 
         this.nom = nom ;
@@ -21,7 +21,7 @@ export class Personne // Le mot export précise que la classe Personne est expor
     {
         console.log( "nom: " + this.nom
             + "\nprenom: " + this.prenom 
-            + "\nage:" + this.age ) ;
+            + "\nage:" + this._age ) ;
     }
 
     // Redéfinition de la méthode toString de la classe mère Object
@@ -29,11 +29,25 @@ export class Personne // Le mot export précise que la classe Personne est expor
     {
         return "nom: " + this.nom
             + " prenom: " + this.prenom 
-            + " age: " + this.age ;
+            + " age: " + this._age ;
     }
 
     setAge( age )
     {
-        if( age >= 0 ) this.age = age ;
+        if( age >= 0 ) this._age = age ;
+    }
+
+    // Ajout d'un getter pour l'age qui renvoie 
+    // la valeur de l'attrinut _age
+    get age()
+    {
+        return this._age ;
+    }
+
+    // Ajout d'un setter pour l'age qui permet de mettre
+    // à jour de façon contrôlée l'attribut _age
+    set age( valeur )
+    {
+        this.setAge( valeur ) ;
     }
 }

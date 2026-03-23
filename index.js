@@ -23,5 +23,13 @@ console.log( "p3: " + p3 ) ;
 
 p3.age = -150 ;
 console.log( "p3: " + p3 ) ;
+console.log( p3 ) ;
+
+p3.age = 50 ;
+console.log( "p3: " + p3 ) ;
+console.log( p3 ) ;
+
+console.log( p3.age ) ;
+
 
 
