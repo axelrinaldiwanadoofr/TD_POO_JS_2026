@@ -15,6 +15,13 @@ console.log( "p2: " + p2 ) ;
 let p3 = new Personne( "MEYER", "Philippe", -18 ) ;
 console.log( "p3: " + p3 ) ;
 
+p3.setAge( -18 ) ;
+console.log( "p3: " + p3 ) ;
 
+p3.setAge( 18 ) ;
+console.log( "p3: " + p3 ) ;
+
+p3.age = -150 ;
+console.log( "p3: " + p3 ) ;
 
 

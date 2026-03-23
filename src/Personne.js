@@ -12,7 +12,7 @@ export class Personne // Le mot export précise que la classe Personne est expor
         }else{
             this.age = age ;
         }
-        
+
         this.nom = nom ;
         this.prenom = prenom ;
     }
@@ -30,5 +30,10 @@ export class Personne // Le mot export précise que la classe Personne est expor
         return "nom: " + this.nom
             + " prenom: " + this.prenom 
             + " age: " + this.age ;
+    }
+
+    setAge( age )
+    {
+        if( age >= 0 ) this.age = age ;
     }
 }
