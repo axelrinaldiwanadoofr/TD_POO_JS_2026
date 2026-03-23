@@ -6,13 +6,15 @@ let p = new Personne() ;
 
 p.affiche() ;
 
-// Initialise ses attributs
-p.nom = "MARTIN" ;
-p.prenom = "Paul" ;
-p.age = 20 ;
+let p2 = new Personne( "MARTIN", "Paul", 21 ) ;
 
-// Affiche le contenu de la personne référencée p
-p.affiche() ;
+p2.affiche() ;
+
+console.log( "p2: " + p2 ) ;
+
+let p3 = new Personne( "MEYER", "Philippe", -18 ) ;
+console.log( "p3: " + p3 ) ;
+
 
 
 
