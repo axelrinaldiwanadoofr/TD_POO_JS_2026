@@ -35,6 +35,10 @@ p3.nom = "meyer" ;
 p3.prenom = "MARCEL" ;
 console.log( "p3: " + p3 ) ;
 
+let s = "hdsgSDSddd" ;
+console.log( s ) ;
+console.log( s.toUpperCase() ) ;
+
 
 
 

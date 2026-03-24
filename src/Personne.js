@@ -13,7 +13,7 @@ export class Personne // Le mot export précise que la classe Personne est expor
             this._age = age ;
         }
 
-        this.nom = nom ;
+        this._nom = nom ;
         this.prenom = prenom ;
     }
 
@@ -49,5 +49,15 @@ export class Personne // Le mot export précise que la classe Personne est expor
     set age( valeur )
     {
         this.setAge( valeur ) ;
+    }
+
+    get nom()
+    {
+        return this._nom ;
+    }
+
+    set nom( valeur )
+    {
+        this._nom = valeur.toUpperCase()  ;
     }
 }
