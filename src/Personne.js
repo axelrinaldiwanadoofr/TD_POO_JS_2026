@@ -4,17 +4,15 @@ export class Personne // Le mot export précise que la classe Personne est expor
     
     constructor( nom="", prenom="", age=0) // Constructeur par défaut (sans argument)
     {
-        // Ajoute et initialise l'attribut nom
+        // Ajoute et initialise les attributs
+        this._nom = "" ;
+        this._prenom = "" ;
+        this._age = 0 ;
 
-        if (age< 0) {
-            console.log("l'âge doit être positif");
-            this._age = 0;
-        }else{
-            this._age = age ;
-        }
-
-        this._nom = nom ;
-        this._prenom = prenom ;
+        // On met à jour les attribut à partir des arguments
+        this.nom = nom ;
+        this.prenom = prenom ;
+        this.age = age ;
     }
 
     affiche()
