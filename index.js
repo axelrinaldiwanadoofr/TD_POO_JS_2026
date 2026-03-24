@@ -42,6 +42,11 @@ console.log( s.toUpperCase() ) ;
 let p4 = new Personne( "Rinaldi", "axel", 20 ) ;
 p4.affiche() ;
 
+p4.age = -10 ;
+p4.affiche() ;
+
+
+
 
 
 

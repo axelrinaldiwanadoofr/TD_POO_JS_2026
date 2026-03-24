@@ -33,6 +33,7 @@ export class Personne // Le mot export précise que la classe Personne est expor
     setAge( age )
     {
         if( age >= 0 ) this._age = age ;
+        else throw "L'age " + age + " ne peut pas être négatif."  ;
     }
 
     // Ajout d'un getter pour l'age qui renvoie 
