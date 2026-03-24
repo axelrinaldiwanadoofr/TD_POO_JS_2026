@@ -14,7 +14,7 @@ export class Personne // Le mot export précise que la classe Personne est expor
         }
 
         this._nom = nom ;
-        this.prenom = prenom ;
+        this._prenom = prenom ;
     }
 
     affiche()
@@ -60,4 +60,15 @@ export class Personne // Le mot export précise que la classe Personne est expor
     {
         this._nom = valeur.toUpperCase()  ;
     }
-}
+
+    set prenom (valeur)
+    {
+        this._prenom = valeur.substring(0,1).toUpperCase() 
+        + valeur.substring(1).toLowerCase();
+    }
+
+    get prenom()
+    {
+        return this._prenom;
+    }
+}   
