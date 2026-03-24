@@ -31,5 +31,10 @@ console.log( p3 ) ;
 
 console.log( p3.age ) ;
 
+p3.nom = "meyer" ;
+p3.prenom = "MARCEL" ;
+console.log( "p3: " + p3 ) ;
+
+
 
 
