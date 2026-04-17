@@ -6,9 +6,17 @@ let p = new Personne() ;
 
 p.affiche() ;
 
-let p2 = new Personne( "MARTIN", "Paul", 21 ) ;
+let p2 = new Personne( "MARTIN", "Paul" ) ;
+
+p2.setDateNaissance( 22, 3, 2008 ) ;
 
 p2.affiche() ;
+
+let dn = p2.dateNaissance ;
+
+p2.dateNaissance = new Date(2007, 3, 15) ;
+
+console.log( p2.age ) ; // Affiche 20 si la personne est née entre le 30/03/2006 et le 31/03/2005 
 
 console.log( "p2: " + p2 ) ;
 
