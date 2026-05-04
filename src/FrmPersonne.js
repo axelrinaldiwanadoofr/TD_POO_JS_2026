@@ -6,6 +6,7 @@ export class FrmPersonne
     constructor( styleClass )
     {
         this.styleClass = styleClass ;
+        this.modele = null ;
 
         // Création d'un écouteur de click sur le bouton OK
         // Recupère le formulaire
@@ -15,13 +16,20 @@ export class FrmPersonne
         let btnOk = frm.getElementsByClassName( "BtnOK" )[0] ;
         btnOk.addEventListener( "click", function()
         {
-            alert( "click sur OK") ;
+            if( this.modele != null )
+            {
+                this.updateModele( this.modele ) ;
+                console.log( "personne: " + this.modele ) ;
+            }
         }) ;
 
     }
 
     updateForm( p )
     {
+        // On stocke la référence du modèle
+        this.modele = p ;
+
         // Recupère le formulaire
         let frm = document.getElementsByClassName( this.styleClass )[0] ;
 
