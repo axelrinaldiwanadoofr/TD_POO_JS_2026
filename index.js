@@ -19,3 +19,6 @@ let p3 = new Personne( "DUPOND", "Lise", new Date( 2000, 2, 10 ) ) ;
 let frm2 = new FrmPersonne( "FrmPersonne", 1) ;
 frm2.updateForm( p3 ) ;
 
+let frm3 = new FrmPersonne( "FrmPersonne", 2) ;
+frm3.updateForm( p2 ) ;
+

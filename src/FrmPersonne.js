@@ -42,9 +42,11 @@ export class FrmPersonne
         // Met à jour les champs
         inNom.value = p.nom ;
         inPrenom.value = p.prenom ;
+        let m = p.dateNaissance.getMonth() ;
+        if( m<10 ) m = "0" + m ;
         inDateNaissance.value = "" + 
             p.dateNaissance.getFullYear() 
-            + "-" + p.dateNaissance.getMonth() 
+            + "-" + m 
             + "-" + p.dateNaissance.getDate() ;
     }
 
