@@ -1,5 +1,5 @@
 
-import {Personne} from "Personne.js" ;
+import {Personne} from "./Personne.js" ;
 
 export class FrmPersonne
 {
