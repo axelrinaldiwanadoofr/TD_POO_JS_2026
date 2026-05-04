@@ -14,7 +14,7 @@ export class FrmPersonne
 
         // Récupère les champs du formulaire
         let btnOk = frm.getElementsByClassName( "BtnOK" )[0] ;
-        btnOk.addEventListener( "click", function()
+        btnOk.addEventListener( "click", () =>
         {
             if( this.modele != null )
             {
