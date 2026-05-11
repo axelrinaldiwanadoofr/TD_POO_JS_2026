@@ -1,5 +1,7 @@
 import {Personne} from "./src/Personne.js" ;
 import { FrmPersonne } from "./src/FrmPersonne.js";
+import { Employe } from "./src/Employe.js";
+import { FrmEmploye } from "./FrmEmploye.js";
 
 
 // Création d'un objet de type Personne
@@ -19,6 +21,9 @@ let p3 = new Personne( "DUPOND", "Lise", new Date( 2000, 2, 10 ) ) ;
 let frm2 = new FrmPersonne( "FrmPersonne", 1) ;
 frm2.updateForm( p3 ) ;
 
-let frm3 = new FrmPersonne( "FrmPersonne", 2) ;
-frm3.updateForm( p2 ) ;
+let emp1 = new Employe( "MEYER", "Yann", 11, 5, 1890,
+    "DUPOND & CO", "Comptable" );
+
+let frm3 = new FrmEmploye( "FrmEmploye", 0) ;
+frm3.updateForm( emp1 ) ;
 

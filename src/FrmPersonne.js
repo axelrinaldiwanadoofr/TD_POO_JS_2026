@@ -48,6 +48,8 @@ export class FrmPersonne
             p.dateNaissance.getFullYear() 
             + "-" + m 
             + "-" + p.dateNaissance.getDate() ;
+
+        return frm ;
     }
 
     updateModele( p )
@@ -65,5 +67,7 @@ export class FrmPersonne
         p.nom = inNom.value ;
         p.prenom = inPrenom.value ;
         p.indDateNaissance = inDateNaissance.value ;
+
+        return frm ;
     }
 }
